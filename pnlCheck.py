@@ -22,7 +22,7 @@ makers = [trader_info['maker'] for topTraders in data.values() for trader_info i
 
 results = []
 
-with ThreadPoolExecutor(max_workers=5) as executor:
+with ThreadPoolExecutor(max_workers=5) as executor: # edit max_workers based on your liking 
     futures = {executor.submit(getMakerData, maker): maker for maker in makers}
     for future in as_completed(futures):
         result = future.result()
