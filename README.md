@@ -1,5 +1,5 @@
 <h1 align="center">
-	<img src="https://photon-sol.tinyastro.io/assets/logo-m-2ea8bb5f9fb16a1eb7c67e8c2d7688ad6b04e11465b21ba388e4b3c5bcd83847.svg" width="150px"><br>
+	<img src="https://i.imgur.com/YJPpoFX.png" width="150px"><br>
     Photon Top Trader Scraper
 </h1>
 <p align="center">
