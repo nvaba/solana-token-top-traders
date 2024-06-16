@@ -6,7 +6,7 @@ with open('top_traders.json', 'r') as file:
     data = json.load(file)
 
 def getMakerData(maker):
-    url = f"https://gmgn.ai/defi/quotation/v1/smartmoney/sol/walletNew/{maker}?period=7d"
+    url = f"https://gmgn.ai/defi/quotation/v1/smartmoney/sol/walletNew/{maker}?period=7d" # change period to 30d if you want monthly data
     response = requests.get(url)
     print(f"[-] Dumping data..")
     if response.status_code == 200:
