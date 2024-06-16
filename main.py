@@ -13,7 +13,7 @@ headers: dict = {
 }
 
 cookies: dict = {
-     '_photon_ta': 'ADD YOUR PHOTON COOKIE HE'
+     '_photon_ta': 'ADD YOUR PHOTON COOKIE HERE'
 }
 
 allData: dict = {}
