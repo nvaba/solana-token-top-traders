@@ -65,8 +65,8 @@ for contractAddress in contractAddresses:
             allData[contractAddress][f"topTrader_{index + 1}"] = {
                 "pumpFunBuy": pumpFunBuy,
                 "maker": signer,
-                "amountBought": boughtUsd,
-                "amountSold": soldUsd,
+                "amountBoughtUSD": boughtUsd,
+                "amountSoldUSD": soldUsd,
                 "unrealizedTokens": unrealizedTokens
             }
         
