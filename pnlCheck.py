@@ -53,4 +53,4 @@ for result in results:
 
 with open('maker_data.json', 'w') as outfile:
     json.dump(result_dict, outfile, indent=4)
-    print(f"[✅] Dumped profit data for {len(data)} wallet(s)..")
+    print(f"[✅] Dumped profit data for {len(makers)} wallet(s)..")
