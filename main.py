@@ -56,14 +56,15 @@ for contractAddress in contractAddresses:
             boughtUsd = float(topTrader['attributes']['boughtUsd'])
             soldUsd = float(topTrader['attributes']['soldUsd'])
             unrealizedTokens = float(topTrader['attributes']['remainingTokens'])
-            pumpFunBuy = False
+            
+            pumpFunBuyOrTokensTransferred = False
 
             if boughtUsd == 0.0:
-                 pumpFunBuy = True
+                 pumpFunBuyOrTokensTransferred = True
             
 
             allData[contractAddress][f"topTrader_{index + 1}"] = {
-                "pumpFunBuy": pumpFunBuy,
+                "pumpFunBuyOrTokensTransferred": pumpFunBuyOrTokensTransferred,
                 "maker": signer,
                 "amountBoughtUSD": boughtUsd,
                 "amountSoldUSD": soldUsd,
